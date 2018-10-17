@@ -13,6 +13,7 @@
 		AC7A4675215CA5AC00A03D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7A4674215CA5AC00A03D6F /* Assets.xcassets */; };
 		AC7A4678215CA5AC00A03D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7A4676215CA5AC00A03D6F /* LaunchScreen.storyboard */; };
 		AC7A467B215CA5AC00A03D6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A467A215CA5AC00A03D6F /* main.m */; };
+		AC7A4683215CA5DA00A03D6F /* WKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A4682215CA5DA00A03D6F /* WKWebViewVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		AC7A4677215CA5AC00A03D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC7A4679215CA5AC00A03D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC7A467A215CA5AC00A03D6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC7A4681215CA5DA00A03D6F /* WKWebViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewVC.h; sourceTree = "<group>"; };
+		AC7A4682215CA5DA00A03D6F /* WKWebViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				AC7A466C215CA5A900A03D6F /* AppDelegate.m */,
 				AC7A466E215CA5A900A03D6F /* ViewController.h */,
 				AC7A466F215CA5A900A03D6F /* ViewController.m */,
+				AC7A4681215CA5DA00A03D6F /* WKWebViewVC.h */,
+				AC7A4682215CA5DA00A03D6F /* WKWebViewVC.m */,
 				AC7A4671215CA5A900A03D6F /* Main.storyboard */,
 				AC7A4674215CA5AC00A03D6F /* Assets.xcassets */,
 				AC7A4676215CA5AC00A03D6F /* LaunchScreen.storyboard */,
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7A4683215CA5DA00A03D6F /* WKWebViewVC.m in Sources */,
 				AC7A4670215CA5A900A03D6F /* ViewController.m in Sources */,
 				AC7A467B215CA5AC00A03D6F /* main.m in Sources */,
 				AC7A466D215CA5A900A03D6F /* AppDelegate.m in Sources */,
@@ -288,6 +294,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PN99H8F5HQ;
 				INFOPLIST_FILE = WKWebViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PN99H8F5HQ;
 				INFOPLIST_FILE = WKWebViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

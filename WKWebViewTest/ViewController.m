@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "WKWebViewVC.h"
 @interface ViewController ()
 
 @end
@@ -16,8 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
+    [btn setTitle:@"WebViewTtn" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    
+    [btn  addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
 }
 
+-(void)btnAction{
+    WKWebViewVC *wkVC = [[WKWebViewVC alloc] init];
+    [self.navigationController pushViewController:wkVC animated:true];
+}
 
 @end
